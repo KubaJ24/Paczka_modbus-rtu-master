@@ -8,7 +8,7 @@ PROG_NAME=".deb copier"
 echo "${PROG_NAME}"
 
 # Kopiowanie paczki .deb
-cp ~/Desktop/programs/modbus/RPi3B_modbus_for_KALi/modbus-rtu-master-0.9.1.deb pool/main/
+cp ~/Desktop/programs/modbus/RPi3B_modbus_for_KALi/modbus-rtu-master-0.9.2.deb pool/main/
 
 # Tworzenie paczek
 # dists/stable...
