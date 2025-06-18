@@ -4,11 +4,17 @@
 
 # Zmienne
 PROG_NAME=".deb copier"
+VERSION=$1
+
+if [[ "$VERSION" == "--help" ]]; then
+	echo "Użycie: ./deb_cp.sh <nowa_wersja paczki>"
+	exit
+fi
 
 echo "${PROG_NAME}"
 
 # Kopiowanie paczki .deb
-cp ~/Desktop/programs/modbus/RPi3B_modbus_for_KALi/modbus-rtu-master-0.9.2.deb pool/main/
+cp ~/Desktop/programs/modbus/RPi3B_modbus_for_KALi/modbus-rtu-master-${VERSION}.deb pool/main/
 
 # Tworzenie paczek
 # dists/stable...
