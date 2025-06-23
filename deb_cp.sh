@@ -14,6 +14,7 @@ fi
 echo "${PROG_NAME}"
 
 # Kopiowanie paczki .deb
+rm -R pool/main/*
 cp ~/Desktop/programs/modbus/RPi3B_modbus_for_KALi/modbus-rtu-master-${VERSION}.deb pool/main/
 
 # Tworzenie paczek
